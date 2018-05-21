@@ -1,0 +1,16 @@
+; The api currently only has one route: /v1/contactsearch/?<phone number>
+; For instructions on deploying the production version of this application, visit this link: http://flask.pocoo.org/docs/1.0/deploying/
+; For support contact: jett@jackson-neilsen.com.au
+
+[odoo]
+; Odoo details, make a dedicated user account for these api calls
+db = db_name
+username = email@example.com
+password = password
+url = http://web:8069
+
+[app]
+; These options should get overwritten by the WSGI server
+debug = False ; This turns on the built in debugger, making debugging api calls more reliable, returns errors formatted in human readable html
+host = 0.0.0.0 ; IP to bind to
+port = 5001 ; Port to bind to
