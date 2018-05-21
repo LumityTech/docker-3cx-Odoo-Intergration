@@ -13,4 +13,4 @@ url = http://web:8069
 ; These options should get overwritten by the WSGI server
 debug = False ; This turns on the built in debugger, making debugging api calls more reliable, returns errors formatted in human readable html
 host = 0.0.0.0 ; IP to bind to
-port = 5001 ; Port to bind to
+port = 5000 ; Port to bind to

@@ -18,6 +18,7 @@ port = config.get('app', 'port')
 
 # Set the endpoint for common (publicly available) api calls
 common = xmlrpclib.ServerProxy('{}/xmlrpc/2/common'.format(url))
+print(common.version())
 # Set the endpoint for object calls
 models = xmlrpclib.ServerProxy('{}/xmlrpc/2/object'.format(url))
 # Get a user ID to make authenticated calls
